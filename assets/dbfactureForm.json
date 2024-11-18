@@ -1,0 +1,33 @@
+{   
+"TitleFormObject":"Add & Update Facture",
+"form":{
+
+"Ref_Facture":{"type":"text","label":"Ref Facture","value":""},
+"Date_Reception":{"type":"pickDate","label":"Date Reception","value":"sysdate"},	
+"Fournisseur":{"type":"ValueApiSelect","label":"Fournisseur","value":"","disabled":false},
+"Designation":{"type":"text","label":"Designation","value":""},
+"Montant_ht":{"type":"text","label":"Montant ht","value":"","disabled":false},
+"Montant_tva":{"type":"text","label":"Montant tva","value":"","disabled":false},
+"Montant_ttc":{"type":"text","label":"Montant ttc","value":"","disabled":false},
+"Statut":{"type":"text","label":"Statut","value":"","disabled":false},
+"Attached_File":{"type":"file","label":"Attached File","value":""}, 
+
+"Commentaire":{"type":"textarea","label":"Commentaire","value":"","disabled":false}
+}
+, 
+    "displayedColumns" : ["Ref_Facture" ,"Designation"	,"Date_Reception" , "Fournisseur"	,"Montant_ttc" 	,"Statut"  ],
+    "actionColumns" : ["Add", "details","action", "delete"],
+    "titleList":"List des Fournisseur",
+    "retourform":{
+                "NA1":{"type":"NothingDate","label":"NA1","value":""},
+                 "Date_Creation":{"type":"pickDate","label":"Date Creation","value":"sysdate"},	
+       
+                "Designation":{"type":"text","label":"Designation","value":""},
+                "Registre_Commerce":{"type":"text","label":"Registre_Commerce","value":"","disabled":true},
+                "Responsable":{"type":"text","label":"Responsable","value":"","disabled":true},
+                "selecteur activite":{"type":"text","label":"selecteur_activite","value":"","disabled":true},
+                "adresse":{"type":"textarea","label":"adress","value":"","disabled":true},                                                                                          		
+                "phone":{"type":"text","label":"phone","value":"","disabled":false,"hide":true}
+                    } 
+    
+}  

@@ -1,0 +1,29 @@
+{   
+"TitleFormObject":"Add & Update Fournisseur",
+"form":{
+    "NA1":{"type":"NothingDate","label":"NA1","value":""},
+     "Date_Creation":{"type":"pickDate","label":"Date Creation","value":"sysdate"},	
+
+    "Designation":{"type":"text","label":"Designation","value":""},
+    "Register_Commerce":{"type":"text","label":"Register Commerce","value":"","disabled":false},
+    "Responsable":{"type":"text","label":"Responsable","value":"","disabled":false},
+    "Secteur_Activite":{"type":"text","label":"Secteur Activite","value":"","disabled":false},
+    "Adresse":{"type":"textarea","label":"Adresse","value":"","disabled":false},                                                                                          		
+    "Phone":{"type":"text","label":"Phone","value":"","disabled":false,"hide":false}
+        }  , 
+"displayedColumns" : ["fournisseur_id" 	,"Designation" ],
+"actionColumns" : ["Add", "details", "delete"],
+"titleList":"List des Fournisseur",
+"retourform":{
+    		"NA1":{"type":"NothingDate","label":"NA1","value":""},
+     		"Date_Creation":{"type":"pickDate","label":"Date Creation","value":"sysdate"},	
+   
+			"Designation":{"type":"text","label":"Designation","value":""},
+			"Registre_Commerce":{"type":"text","label":"Registre_Commerce","value":"","disabled":true},
+			"Responsable":{"type":"text","label":"Responsable","value":"","disabled":true},
+			"selecteur activite":{"type":"text","label":"selecteur_activite","value":"","disabled":true},
+			"adresse":{"type":"textarea","label":"adress","value":"","disabled":true},                                                                                          		
+			"phone":{"type":"text","label":"phone","value":"","disabled":false,"hide":true}
+				} 
+
+}  

@@ -1,0 +1,20 @@
+{   
+"TitleFormObject":"Add & Update Encaissement",
+"form":{
+    "NA1":{"type":"NothingDate","label":"NA1","value":""},
+    "Date":{"type":"pickDate","label":"Date","value":"sysdate"},	
+		"Coproprietaire":{"type":"text","label":"Coproprietaire","value":"localStorage.getItem('Groupe')","disabled":true},
+    "Composant":{"type":"ValueApiSelect","label":"Composant","value":"","disabled":false},
+	
+    "Montant":{"type":"text","label":"Subject","value":""},
+		"Type":{"type":"select","label":"Type","value":"","paramValue":["Espece","Cheque","Virement"],"disabled":false},
+		"NA2":{"type":"Nothing","label":"NA2","value":""},
+     "Attached_File":{"type":"file","label":"Attached File","value":""}, 
+
+		"Commentaire":{"type":"textarea","label":"Message","value":"","disabled":false}
+		} , 
+    "displayedColumns" : ["encaissement_id" 	,"Date" , "Type"	,"Coproprietaire" 	,"Montant"  ],
+    "actionColumns" : ["Add", "details", "delete"],
+    "titleList":"List des Encaissements"
+
+}  

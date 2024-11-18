@@ -1,0 +1,76 @@
+{   
+    "TitleFormObject":"Patient",
+    
+    "form":{  
+    "Nom":{"type":"text","label":"Nom","value":"", "validator":["required"]},
+	"Prenom":{"type":"text","label":"Prenom","value":"","validator":["required"]},
+    "Date_Naissance":{"type":"pickDate","label":"Date Naissance","value":"sysdate"},	
+    "Lieu_Naissance":{"type":"select","label":"Lieu Naissance","value":" Tunis","paramValue": [
+        "Tunis",
+        "Ariana",
+        "Béja",
+        "Ben Arous",
+        "Bizerte",
+        "Gabès",
+        "Gafsa",
+        "Jendouba",
+        "Kairouan",
+        "Kasserine",
+        "Kebili",
+        "Kef",
+        "Mahdia",
+        "Manouba",
+        "Médenine",
+        "Monastir",
+        "Nabeul",
+        "Sfax",
+        "Sidi Bouzid",
+        "Siliana",
+        "Sousse",
+        "Tataouine",
+        "Tozeur",
+        "Zaghouan"
+        ]},
+   
+
+   	"Phone":{"type":"text","label":"Phone","value":"","validator":["required","minLength(8)","stringPatternValidator(^[0-9]\\d*$)"]},
+ 	"Email":{"type":"text","label":"Email","value":"","validator":["required","minLength(5)","stringPatternValidator(^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$)"]},
+     "Adresse":{"type":"textarea","label":"Adresse","value":""},
+     "Ville":{"type":"select","label":"Ville","value":"Tunis","paramValue": [
+        "Tunis",
+        "Ariana",
+        "Béja",
+        "Ben Arous",
+        "Bizerte",
+        "Gabès",
+        "Gafsa",
+        "Jendouba",
+        "Kairouan",
+        "Kasserine",
+        "Kebili",
+        "Kef",
+        "Mahdia",
+        "Manouba",
+        "Médenine",
+        "Monastir",
+        "Nabeul",
+        "Sfax",
+        "Sidi Bouzid",
+        "Siliana",
+        "Sousse",
+        "Tataouine",
+        "Tozeur",
+        "Zaghouan"
+        ]}
+  
+} , 
+
+"displayedColumns" : ["Prenom",	"Nom","Date_Naissance",	"Ville",	"Adresse"],
+"actionColumns" : ["add","delete","details", "update"],
+"titleList":"Liste des Patients"
+
+}  
+
+
+
+

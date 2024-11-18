@@ -1,0 +1,12 @@
+{"form":{
+    "Spécialiste"	:{"type":"text","label":"spécialiste","value":""	,"disabled":false},	
+    "Disponible"		:{"type":"text","label":"Disponible","value":""	 	,"disabled":false},
+    "Camera"		:{"type":"text","label":"Camera","value":""	 	,"disabled":false}
+	
+},
+"TitleFormObject":"Détails Composant",
+"displayedColumns" : [	"spécialiste", 	"disponible"],
+"actionColumns" :[ "details"],
+"titleList":"Liste des composants "
+   
+    }    

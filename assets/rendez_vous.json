@@ -1,0 +1,66 @@
+{   
+"TitleFormObject":"Add & Update Rendez Vous",
+"form":{
+    "NA1":{"type":"NothingDate","label":"NA1","value":""},
+   
+     "Date":{"type":"pickDate","label":"Date","value":"sysdate"},	
+   
+		"patient":{"type":"ValueApiSelect","label":"patient","value":"","disabled":true},
+		"motif":{"type":"text","label":"motif","value":""},
+		"statut":{"type":"select","label":"statut","value":"","paramValue":["Prévu","Annulé","Terminé"],"disabled":false},
+		"chu":{"type":"select","label":"chu","value":"","paramValue":["Tunis:CHU La Rabta",
+        "Tunis:CHU Charles Nicolle",
+        "Tunis:CHU Habib Thameur",
+        "Tunis:CHU Mongi Slim (La Marsa)",
+        "Tunis:CHU Salah Azaiez(Cancérologie)",
+        "Sfax :CHU Habib Bourguiba",
+        "Sfax :CHU Hédi Chaker",
+        "Sousse :CHU Farhat Hached",
+        "Sousse :CHU Sahloul",
+        "Monastir :CHU Fattouma Bourguiba",
+        "Bizerte :CHU Habib Bougatfa",
+        "Gabès :CHU Mohamed Ben Sassi",
+        "Gafsa :CHU Houcine Bouzaiene",
+        "Nabeul :CHU Mohamed Taher Maamouri"],"disabled":false},
+
+        "spécialité":{"type":"select","label":"spécialité","value":"","paramValue":["Médecine générale",
+        "Cardiologie",
+        "Pneumologie",
+        "Néphrologie (reins) ",
+        "Gastroentérologie",
+        "Hématologie(Maladies du sang",
+        "Endocrinologie (diabète)",
+        "Rhumatologie ",
+        "Dermatologie",
+        "Neurologie ",
+        "Chirurgie",
+        "Pédiatrie",
+        "Gynécologie",
+        "Médecine d’urgence ",
+        "Anesthésie-réanimation ",
+        "Radiologie",
+        "Oncologie (cancers) ",
+        "Ophtalmologie ",
+        "ORL(Oreilles,nez,gorge) ",
+        "Urologie"],"disabled":false},
+	    "medecin":{"type":"ValueApiSelect","label":"medecin","value":"","disabled":false},			
+		"observation":{"type":"textarea","label":"observation","value":"","disabled":false}
+		} , 
+"displayedColumns" : ["date" , "patient","motif", "spécialité","medecin" , "chu" ],
+"actionColumns" : ["Add", "details", "delete"],
+"titleList":"List des Rendez Vous",
+"retourform":{
+    		"NA1":{"type":"NothingDate","label":"NA1","value":""},
+     		"Date":{"type":"pickDate","label":"Date","value":"sysdate"},	
+   
+			"Coproprietaire":{"type":"text","label":"Coproprietaire","value":"localStorage.getItem('user')","disabled":true},
+			"Composant":{"type":"text","label":"Composant","value":"","disabled":true},
+			"Subject":{"type":"text","label":"Subject","value":"","disabled":true},
+			"Type":{"type":"text","label":"Type","value":"","disabled":true},
+			"Attached_File":{"type":"file","label":"Attached File","value":""},
+			"Message":{"type":"textarea","label":"Message","value":"","disabled":true},                                                                                          		
+			"Retour":{"type":"textarea","label":"Retour","value":"","disabled":false,"hide":true},
+			"Responsable":{"type":"text","label":"Responsable","value":"localStorage.getItem('user')","disabled":true,"hide":true}
+			} 
+
+}  

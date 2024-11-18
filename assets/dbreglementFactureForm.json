@@ -1,0 +1,64 @@
+{   
+"TitleFormObject":"Add & Update Reglement Facture",
+"form":{
+"Ref_Facture":{"type":"text","label":"Ref_Facture","value":"","disabled":true},
+
+"Date_Reception":{"type":"text","label":"Date Reception","value":"sysdate","disabled":true},	
+"Fournisseur":{"type":"text","label":"Fournisseur","value":"","disabled":true},
+"Designation":{"type":"text","label":"Designation","value":"","disabled":true},
+"Montant_ht":{"type":"text","label":"Montant ht","value":"","disabled":true},
+"Montant_tva":{"type":"text","label":"Montant tva","value":"","disabled":true},
+"Montant_ttc":{"type":"text","label":"Montant ttc","value":"","disabled":true},
+"Statut":{"type":"text","label":"Statut","value":"","disabled":false},
+"NA1":{"type":"NothingDate","label":"NA1","value":""},
+"NA2":{"type":"NothingDate","label":"NA2","value":""},
+  
+"Montant":{"type":"text","label":"Montant","value":"","disabled":false},
+"Date_Reglement":{"type":"pickDate","label":"Date Reglement","value":"sysdate"},	
+
+"Type_Reglement":{"type":"select","label":"Type_Reglement","value":["cheque","virement","espece"],"disabled":false},
+"Ref_Reglement":{"type":"textarea","label":"Ref_Reglement","value":"","disabled":false},
+"Attached_File":{"type":"file","label":"Attached File","value":""}, 
+"Commentaire":{"type":"textarea","label":"Commentaire","value":"","disabled":false}
+}
+, 
+"formAdd":{
+    "Ref_Facture":{"type":"ValueApiSelect","label":"Ref_Facture","value":"","disabled":true},
+    "Date_Reception":{"type":"text","label":"Date Reception","value":"sysdate","disabled":true},	
+    "Fournisseur":{"type":"text","label":"Fournisseur","value":"","disabled":true},
+    "Designation":{"type":"text","label":"Designation","value":"","disabled":true},
+    "Montant_ht":{"type":"text","label":"Montant ht","value":"","disabled":true},
+    "Montant_tva":{"type":"text","label":"Montant tva","value":"","disabled":true},
+    "Montant_ttc":{"type":"text","label":"Montant ttc","value":"","disabled":true},
+    "Statut":{"type":"text","label":"Statut","value":"","disabled":false},
+    "NA1":{"type":"NothingDate","label":"NA1","value":""},
+    "NA2":{"type":"NothingDate","label":"NA2","value":""},
+      
+    "Montant":{"type":"text","label":"Montant","value":"","disabled":false},
+    "Date_Reglement":{"type":"pickDate","label":"Date Reglement","value":"sysdate"},	
+    
+    "Type_Reglement":{"type":"select","label":"Type_Reglement","value":["cheque","virement","espece"],"disabled":false},
+    "Ref_Reglement":{"type":"textarea","label":"Ref_Reglement","value":"","disabled":false},
+    "Attached_File":{"type":"file","label":"Attached File","value":""}, 
+    "Commentaire":{"type":"textarea","label":"Commentaire","value":"","disabled":false}
+    }
+    , 
+    "displayedColumns" : ["Ref_Facture" 	,"Date_Reglement" , "Montant"	,"Type_Reglement"  ],
+    "actionColumns" : ["Add", "details", "delete"],
+    "titleList":"List des Reglement Facture"
+    ,
+    "retourform":{
+                "NA1":{"type":"NothingDate","label":"NA1","value":""},
+                 "Date_Creation":{"type":"pickDate","label":"Date Creation","value":"sysdate"},	
+       
+                "Designation":{"type":"text","label":"Designation","value":""},
+                "Registre_Commerce":{"type":"text","label":"Registre_Commerce","value":"","disabled":true},
+                "Responsable":{"type":"text","label":"Responsable","value":"","disabled":true},
+                "selecteur activite":{"type":"text","label":"selecteur_activite","value":"","disabled":true},
+                "adresse":{"type":"textarea","label":"adress","value":"","disabled":true},                                                                                          		
+                "phone":{"type":"text","label":"phone","value":"","disabled":false,"hide":true}
+                    } 
+    
+    }  
+
+    

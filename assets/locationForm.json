@@ -1,0 +1,68 @@
+{   
+    "TitleFormObject":"Medecin",
+    
+    "form":{  
+    "Nom":{"type":"text","label":"Nom","value":"", "validator":["required","stringPatternValidator(^[a-z0-9_-]{4,15}$)"]},
+	"Prenom":{"type":"text","label":"Prenom","value":"","validator":["required","stringPatternValidator(^[a-z0-9_-]{4,15}$)"]},
+    "Date_Naissance":{"type":"pickDate","label":"Date Reception","value":"sysdate"},	
+    "Lieu_Naissance":{"type":"select","label":"Grade","value":"Généraliste","paramValue": [
+        "Ariana",
+        "Béja",
+        "Ben Arous",
+        "Bizerte",
+        "Gabès",
+        "Gafsa",
+        "Jendouba",
+        "Kairouan",
+        "Kasserine",
+        "Kebili",
+        "Kef",
+        "Mahdia",
+        "Manouba",
+        "Médenine",
+        "Monastir",
+        "Nabeul",
+        "Sfax",
+        "Sidi Bouzid",
+        "Siliana",
+        "Sousse",
+        "Tataouine",
+        "Tozeur",
+        "Tunis",
+        "Zaghouan"
+        ]},
+   	"Grade":{"type":"select","label":"Grade","value":"Généraliste","paramValue": ["Externe", "Généraliste", "Spécialiste", "Résident", "Professeu"]},
+	"Spécialité":{"type":"select","label":"Spécialité","value":"Généraliste","paramValue": [
+    "Généraliste",
+    "Medecine Interne",
+    "Orthopedie",
+    "Dentaire",
+    "Rhumatologie",
+    "Ophtalmologie",
+    "Pneumologie",
+    "Gastro"]},
+
+
+   	"Phone":{"type":"text","label":"Phone","value":"","validator":["required","minLength(8)","stringPatternValidator(^[0-9]\\d*$)"]},
+ 	"Email":{"type":"text","label":"Email","value":"","validator":["required","minLength(5)","stringPatternValidator(^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$)"]},
+     "Adresse":{"type":"textarea","label":"Adresse","value":""}
+  
+} , 
+
+"displayedColumns" : ["Prenom",	"Nom",	"Grade",	"Spécialité" ,"Adresse"],
+"actionColumns" : ["add","delete","details", "update"],
+"titleList":"Liste des Medecins"
+
+}  
+
+
+
+
+
+
+
+
+
+
+
+
